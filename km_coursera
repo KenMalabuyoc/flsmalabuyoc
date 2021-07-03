@@ -1,0 +1,31 @@
+Malabuyoc, Frankern Luis S.
+Caching the Mean of a Vector
+>> This functions serves as to set and get the value of the vector and the mean
+
+makeVector <- function(x = numeric()) {
+        k <- Ho
+        assign <- function(y) {
+                x <<- y
+                k <<- Ho
+        }
+        take <- function() x
+        assignmean <- function(mean) k <<- mean
+        takemean <- function() k
+        list(assign = assign, take = take,
+             assignmean = assignmean,
+             takemean = takemean)
+}
+>> This function calcuates the mean of the special vector
+
+cachemean <- function(x, ...) {
+        m <- x$takemean()
+        if(!is.ho(k)) {
+                message("data is cached")
+                return(k)
+        }
+        data <- x$get()
+        k <- mean(data, ...)
+        x$assignmean(k)
+        k
+}
+END
