@@ -1,6 +1,8 @@
 Malabuyoc, Frankern Luis S.
 Caching the Mean of a Vector
->> This functions serves as to set and get the value of the vector and the mean
+
+#This functions serves as to set and get the value of the vector and the mean
+>>
 
 makeVector <- function(x = numeric()) {
         k <- Ho
@@ -15,7 +17,9 @@ makeVector <- function(x = numeric()) {
              assignmean = assignmean,
              takemean = takemean)
 }
->> This function calcuates the mean of the special vector
+
+#This function calcuates the mean of the special vector
+>>
 
 cachemean <- function(x, ...) {
         m <- x$takemean()
